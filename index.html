@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Инструкция YUGRA online</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --card-bg: #0f0f0f;
+            --accent-green: #00ff00;
+            --accent-blue: #0079c1;
+            --text: #ffffff;
+            --text-dim: #aaaaaa;
+            --android-brand: #3DDC84;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+        .logo .yugra { color: var(--accent-green); }
+        .logo .online { color: var(--accent-blue); }
+
+        .step {
+            background: var(--card-bg);
+            border-radius: 18px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #222;
+        }
+
+        .step-num {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--text-dim);
+            margin: 10px 0;
+        }
+
+        .download-box {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .btn-dl {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.2s;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn-dl:active {
+            transform: scale(0.97);
+        }
+
+        .btn-dl svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .btn-android {
+            background-color: var(--android-brand);
+            color: #000000;
+        }
+
+        .btn-ios {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            border: 1px solid #333;
+        }
+
+        .instruction-img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+            border: 1px solid #333;
+        }
+
+        .link-btn {
+            display: inline-block;
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px dashed var(--accent-green);
+        }
+
+        .done-card {
+            text-align: center;
+            padding: 40px 20px;
+            border: 2px solid var(--accent-green);
+        }
+
+        /* Выделенный блок P.S. */
+        .footer-ps {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 255, 0, 0.05); /* Легкий зеленый фон */
+            border-radius: 18px;
+            border: 1px solid var(--accent-blue);
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        .footer-ps strong {
+            color: var(--accent-green);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 17px;
+        }
+
+        .footer-ps a {
+            color: var(--accent-blue);
+            font-weight: bold;
+            word-break: break-all;
+            text-decoration: none;
+            background: rgba(0, 121, 193, 0.1);
+            padding: 5px 10px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <span class="yugra">YUGRA</span> <span class="online">online</span>
+    </div>
+
+    <div class="step">
+        <h2><span class="step-num">1</span> Скачать приложение</h2>
+        <p>Установите Happ на ваше устройство:</p>
+        <div class="download-box">
+            <a href="https://play.google.com/store/apps/details?id=com.happproxy" class="btn-dl btn-android" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414C17.067 15.3414 16.691 14.9654 16.691 14.5094C16.691 14.0534 17.067 13.6774 17.523 13.6774C17.979 13.6774 18.355 14.0534 18.355 14.5094C18.355 14.9654 17.979 15.3414 17.523 15.3414ZM6.477 15.3414C6.021 15.3414 5.645 14.9654 5.645 14.5094C5.645 14.0534 6.021 13.6774 6.477 13.6774C6.933 13.6774 7.309 14.0534 7.309 14.5094C7.309 14.9654 6.933 15.3414 6.477 15.3414ZM17.967 10.3014L19.682 7.3294C19.801 7.1234 19.73 6.8604 19.524 6.7414C19.318 6.6224 19.055 6.6934 18.936 6.8994L17.186 9.9314C15.659 9.2394 13.91 8.8514 12 8.8514C10.09 8.8514 8.341 9.2394 6.814 9.9314L5.064 6.8994C4.945 6.6934 4.682 6.6224 4.476 6.7414C4.27 6.8604 4.199 7.1234 4.318 7.3294L6.033 10.3014C2.616 12.1624 0.283 15.5244 0 19.4674H24C23.717 15.5244 21.384 12.1624 17.967 10.3014Z"/></svg>
+                Google Play
+            </a>
+            <a href="https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973" class="btn-dl btn-ios" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 0 184.8 0 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-39-19.9-50-50-50-85.3zm-39.7-142c23.6-28.9 33-69.8 28.5-107.2-30.8 1.4-67.6 20.3-88.5 45-18.1 21.2-31.5 59.5-24.9 96.5 33.3 3.6 63.8-10.4 84.9-34.3z"/></svg>
+                App Store
+            </a>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2><span class="step-num">2</span> Временный ключ</h2>
+        <p>Получите временный ключ и вставьте его в приложение Happ.</p>
+        <img src="img/photo1.jpg" alt="Как вставить ключ" class="instruction-img">
+    </div>
+
+    <div class="step">
+        <h2><span class="step-num">3</span> Включите VPN</h2>
+        <p>Нажмите кнопку подключения в Happ и перейдите в наш бот:</p>
+        <a href="https://t.me/Yugra86V_bot" class="link-btn">@Yugra86V_bot</a>
+    </div>
+
+    <div class="step">
+        <h2><span class="step-num">4</span> Активация в боте</h2>
+        <p>В боте вы автоматически получите подписку. Нажмите <b>"Подключиться"</b>. Подробности есть в канале:</p>
+        <a href="https://t.me/+_8TRlT3clvo0ZTgy" class="link-btn">Перейти в канал</a>
+        <img src="img/photo2.jpg" alt="Инструкция в боте" class="instruction-img">
+    </div>
+
+    <div class="step">
+        <h2><span class="step-num">5</span> Удалить старый ключ</h2>
+        <p>Удалите временный ключ, который мы добавляли в самом начале (Шаг 2).</p>
+    </div>
+
+    <div class="step done-card">
+        <h2 style="justify-content: center;">✅ Готово!</h2>
+        <p>Приятного пользования быстрым интернетом.</p>
+    </div>
+
+    <div class="footer-ps">
+        <strong>P.S. Важно!</strong>
+        Для стабильной работы обязательно установите «Умную маршрутизацию» по ссылке: <br>
+        <a href="https://wg86keen.github.io/Happrout_Yugra86V/" target="_blank" rel="noopener noreferrer">https://wg86keen.github.io/Happrout_Yugra86V/</a>
+    </div>
+</div>
+
+</body>
+</html>
